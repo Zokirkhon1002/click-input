@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+      overflow: hidden;
+    background-color: rgb(153, 109, 255);
+}
+.container {
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+.container .search {
+    font-size: 2.2rem;
+    height: 6rem;
+    width: 6rem;
+    padding: 0px 0px 5px 30px;
+    transition: all 0.2s ease;
+}
+.search:focus, .btn:focus {
+    border: none;
+    outline: none;
+
+}
+.btn {
+    background-color: transparent;
+    cursor: pointer;
+    width: 90px;
+    height: 90px;
+    outline: none;
+    border: none;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    transition: all 0.2s ease;
+
+}
+.btn i {
+    position: absolute;
+    font-size: 4em;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn i:hover {
+    transform: scale(1.09);
+}
+
+.container.active .search {
+    width: 45rem;
+  }
